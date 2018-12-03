@@ -75,16 +75,16 @@ describe 'Person' do
 
   context 'with jobs' do
     describe '#job=' do
-      it 'writes the breed of the person to an instance variable @breed' do
+      it 'writes the job of the person to an instance variable @job' do
         beyonce = Person.new
         beyonce.job = "Singer"
 
-        expect(beyonce.instance_variable_get(:@breed)).to eq("Singer")
+        expect(beyonce.instance_variable_get(:@job)).to eq("Singer")
       end
     end
 
     describe '#job' do
-      it 'reads the breed of the person from an instance variable @breed' do
+      it 'reads the job of the person from an instance variable @job' do
         beyonce = Person.new
         beyonce.instance_variable_set(:@job, "Singer")
 
